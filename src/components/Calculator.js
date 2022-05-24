@@ -57,15 +57,16 @@ function Calculator() {
     /*if (operator == "+") {
       equation = parseInt(firstNumber) + parseInt(secondNumber);
     } else if (operator == "-") {
-      equation = parseInt(firstNumber) - parseInt(secondNumber);
+      equation = firstNumber - secondNumber;
     } else if (operator == "*") {
-      equation = parseInt(firstNumber) * parseInt(secondNumber);
+      equation = firstNumber * secondNumber;
     } else if (operator == "/") {
-      equation = parseInt(firstNumber) / parseInt(secondNumber);
+      equation = firstNumber / secondNumber;
     } else if (operator == "%") {
-      equation = parseInt(firstNumber) % parseInt(secondNumber);
+      equation = firstNumber % secondNumber;
     }*/
 
+    // Most efficient method to calculate
     switch (operator) {
       case "+":
         equation = parseInt(firstNumber) + parseInt(secondNumber);
