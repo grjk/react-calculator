@@ -71,18 +71,34 @@ function Calculator() {
         equation = parseInt(firstNumber) + parseInt(secondNumber);
         break;
       case "-":
-        equation = parseInt(firstNumber) - parseInt(secondNumber);
+        equation = firstNumber - secondNumber;
         break;
       case "*":
-        equation = parseInt(firstNumber) * parseInt(secondNumber);
+        equation = firstNumber * secondNumber;
         break;
       case "/":
-        equation = parseInt(firstNumber) / parseInt(secondNumber);
+        equation = firstNumber / secondNumber;
         break;
       case "%":
-        equation = parseInt(firstNumber) % parseInt(secondNumber);
+        equation = firstNumber % secondNumber;
         break;
     }
+
+    /*var operators = {
+        "+": (a, b) => parseInt(a) + parseInt(b),
+        "-": (a, b) => a - b,
+        "*": (a, b) => a * b,
+        "/": (a, b) => a / b,
+        "%": (a, b) => a % b,
+      },
+      calculate = function (firstNumber, secondNumber, operator) {
+        if (operator in operators) {
+          return operators[operator](firstNumber, secondNumber);
+        }
+      };
+
+    equation = calculate(firstNumber, secondNumber, operator);*/
+
     clearValues();
     setResult(equation);
     setFirstNumber(equation);
