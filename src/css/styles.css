@@ -1,0 +1,45 @@
+.calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-display {
+    height: 50px;
+    font-size: 50px;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0;
+    width: 275px;
+}
+
+.numbers {
+    flex-direction: row-reverse;
+}
+
+.button {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: none;
+    background-color: gainsboro;
+    font-size: 20px;
+    margin: 2px;
+}
+
+.button.equal-button {
+    width: 250px;
+    height: 85px;
+    border-radius: 50px;
+    border: none;
+    background-color: gainsboro;
+    font-size: 20px;
+}
+
+.button:active {
+    background-color: gray;
+}
