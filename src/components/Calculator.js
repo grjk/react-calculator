@@ -54,7 +54,7 @@ function Calculator() {
 
   const runEquation = () => {
     var equation = "";
-    if (operator == "+") {
+    /*if (operator == "+") {
       equation = parseInt(firstNumber) + parseInt(secondNumber);
     } else if (operator == "-") {
       equation = parseInt(firstNumber) - parseInt(secondNumber);
@@ -64,6 +64,24 @@ function Calculator() {
       equation = parseInt(firstNumber) / parseInt(secondNumber);
     } else if (operator == "%") {
       equation = parseInt(firstNumber) % parseInt(secondNumber);
+    }*/
+
+    switch (operator) {
+      case "+":
+        equation = parseInt(firstNumber) + parseInt(secondNumber);
+        break;
+      case "-":
+        equation = parseInt(firstNumber) - parseInt(secondNumber);
+        break;
+      case "*":
+        equation = parseInt(firstNumber) * parseInt(secondNumber);
+        break;
+      case "/":
+        equation = parseInt(firstNumber) / parseInt(secondNumber);
+        break;
+      case "%":
+        equation = parseInt(firstNumber) % parseInt(secondNumber);
+        break;
     }
     clearValues();
     setResult(equation);
